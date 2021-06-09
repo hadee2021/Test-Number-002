@@ -1,0 +1,98 @@
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 56px;
+}
+/* :root{
+  --flexbox-rowcount: width / min-width;
+  --flexbox-colcount: height / min-height;
+} */
+main > div {
+  /* width: calc(100% / var(--flexbox-rowcount));
+  height: calc(100% / var(--flexbox-colcount)); */
+  min-width: 280px;
+  max-width: 350px;
+  height: 220px;
+  flex: 1;
+  padding: 0 14px;
+  margin-bottom: 35px;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+main > div > span {
+  width: 100%;
+  flex: 5;
+  overflow: hidden;
+  max-height: 144px;
+}
+span > img {
+  /* width: 100%;
+  height: 100%; */
+  width: 280px;
+  height: 145px;
+}
+.flex-space {
+  flex: 2;
+}
+.profile-discribe {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.profile-discribe > div:first-child {
+  flex: 1;
+}
+.profile-discribe > div:first-child > img {
+  /* width: 90%;
+  height: 65%; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.ty {
+  width: 100%;
+  height: 70%;
+}
+.profile-discribe > div:last-child {
+  flex: 4;
+}
+.flex-tn {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  /*z-index용*/
+  position: relative;
+}
+.title {
+  flex: 1;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  cursor: pointer;
+}
+.tittle-z-index {
+  display: none;
+  width: 326px;
+  height: 65px;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: -40px;
+  z-index: 100;
+}
+.title:hover .tittle-z-index {
+  display: inline-block;
+}
+.name-data {
+  flex: 1;
+  font-size: small;
+  color: lightslategray;
+}

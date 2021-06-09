@@ -1,0 +1,47 @@
+/*aside*/
+ul{
+  list-style: none;
+  padding: 0;
+}
+ul > div{
+  border-bottom: 1px solid #888;
+}
+ul > div > div{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+}
+ul > div > div:hover{
+  background-color: lightgrey;
+}
+i,
+li{
+  display: inline-block;
+  align-self: center;
+}
+i{
+  width: 33px;
+}
+i:hover{
+  color: red;
+}
+
+li{
+  width: 177px;
+}
+.circle-icon{
+  height: 30px;
+  align-self: center;
+  margin-right: 16px;
+}
+.circle-icon i{
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.circle-icon:hover i{
+  border-color: blue;
+}

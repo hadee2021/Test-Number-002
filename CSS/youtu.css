@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+.center-align {
+  margin: 0 auto;
+  width: 1470px;
+  height: 100%;
+}
+.blind{
+  display: none;
+}
+header{
+  height: 60px;
+}
+header > div{
+  background-color: rgba(255, 255, 255, 0.7);
+} 
+
+#container{
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+}
+#start{
+  width: 260px;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#start > h1{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-image: url(../PIC/sp_themecast.png);
+  background-position: -211px -251px;
+  background-repeat: no-repeat;
+  align-self: center;
+  cursor: pointer;
+  margin: 0;
+}
+#start > h1:hover{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-image: url(../PIC/sp_themecast.png);
+  background-position: -241px -251px;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+#start a{ 
+  /*이미지는 부모에 width를 주어야함 그래야 영역을 먹음*/
+  position: relative;
+  display: inline-block;
+    width: 162px;
+}
+#logo{
+  width: 162px; /*이미지 크기조절기능*/
+  position: absolute;
+  top: 0px;
+}
+#middle{
+  width: 670px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.header-search{
+  width: 620px;
+  position: relative;
+}
+fieldset{
+  position: absolute;
+  top: 9px;
+  width: 610px;
+  border: 1px solid lightslategray;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  padding-left: 5px;
+  margin-right: 0;
+}
+fieldset:hover{
+  border: 1px solid skyblue;
+}
+fieldset input{
+  border: none;
+  width: 522px;
+  outline: none;
+}
+#search-keyboard{
+  width: 35px;
+  height: 25px;
+  display: inline-block;
+  background-image: url(../PIC/네이버\ 스프라이트.png);
+  background-position: -25px -53px;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+#search-keyboard:hover{
+  background-image: url(../PIC/네이버\ 스프라이트.png);
+  background-position: -52px -53px;
+}
+#search-button{
+  width: 45px;
+  height: 35px;
+  background-image: url(../PIC/검색로고.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 4px 6px;
+}
+#search-button > button{
+  width: 40px;
+  height: 30px;
+  display: none;
+}
+.mic{
+  width: 50px;
+  padding: 13px;
+  cursor: pointer;
+}
+#mic:hover{
+  content: url(../PIC/마이크\ 투명22.png);
+}
+
+#end{
+  width: 370px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+#end *{
+  cursor: pointer;
+  /* width: 40px;
+  height: 40px;
+  padding: 8px; */
+}
+#end > div{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  margin: 8px 0;
+}
+#video:hover{
+  /*이미지 태그에 hover할경우 content속성을 이용하자*/
+  content: url(../PIC/비디오\ 투명22.png);
+}
+#head-meun:hover{
+  content: url(../PIC/헤더메뉴\ 투명22.png);
+}
+#alarm:hover{
+  content: url(../PIC/알림\ 투명22.png);
+}
+#space{
+  display: flex;
+  flex-flow: row nowrap;
+}
+aside{
+  width: 260px;
+  display: inline-block;
+}
