@@ -5,15 +5,12 @@ header {
   justify-content: space-between;
 }
 #start {
-  /* width: 260px;
-  height: 100%; */
   display: flex;
   flex-flow: row nowrap;
 }
 #start > h1 {
   width: 35px;
   height: 35px;
-  display: inline-block;
   background-image: url(../PIC/sp_themecast.png);
   background-position: -211px -251px;
   background-repeat: no-repeat;
@@ -28,8 +25,6 @@ header {
 #middle {
   display: flex;
   flex-flow: row nowrap;
-
-  /* width: 50%; */
   min-width: 200px;
   justify-content: center;
 }
@@ -93,10 +88,10 @@ fieldset input {
 }
 
 #end {
-  /* width: 370px; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+  align-items: center;
 }
 #end * {
   cursor: pointer;
@@ -108,10 +103,7 @@ fieldset input {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  width: 40px;
-  height: 40px;
   padding: 8px;
-  margin: 8px 0;
 }
 #video:hover {
   /*이미지 태그에 hover할경우 content속성을 이용하자*/

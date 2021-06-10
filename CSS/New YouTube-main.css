@@ -13,7 +13,6 @@ main > div {
   height: calc(100% / var(--flexbox-colcount)); */
   min-width: 280px;
   max-width: 350px;
-  height: 220px;
   flex: 1;
   padding: 0 14px;
   margin-bottom: 35px;
@@ -22,19 +21,11 @@ main > div {
   flex-flow: column nowrap;
 }
 main > div > span {
-  width: 100%;
-  flex: 5;
   overflow: hidden;
-  max-height: 144px;
 }
 span > img {
-  /* width: 100%;
-  height: 100%; */
-  width: 280px;
-  height: 145px;
-}
-.flex-space {
-  flex: 2;
+  max-width: 100%;
+  height: auto;
 }
 .profile-discribe {
   width: 100%;
@@ -51,10 +42,6 @@ span > img {
   height: 50px;
   border-radius: 50%;
   padding: 5px;
-}
-.ty {
-  width: 100%;
-  height: 70%;
 }
 .profile-discribe > div:last-child {
   flex: 4;
@@ -79,14 +66,11 @@ span > img {
 }
 .tittle-z-index {
   display: none;
-  width: 326px;
-  height: 65px;
   border: 1px solid black;
   background-color: white;
   position: absolute;
   top: 0;
   right: -40px;
-  z-index: 100;
 }
 .title:hover .tittle-z-index {
   display: inline-block;
