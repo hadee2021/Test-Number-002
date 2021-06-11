@@ -27,11 +27,6 @@ aside{
   overflow: auto;
   align-self: flex-end;
 }
-.scrollbar::-webkit-scrollbar-thumb{
-  width: 8px;
-  background-color: lightskyblue;
-  border-radius: 20px;
-}
 main{
   flex: auto;
   
