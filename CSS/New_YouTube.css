@@ -19,7 +19,6 @@ header{
 #aside-main-layout{
   display: flex;
   height: 100%;
-  
 }
 aside{
   min-width: 260px;

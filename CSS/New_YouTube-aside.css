@@ -34,11 +34,8 @@ li > span{
   margin-right: 16px;
 }
 .circle-icon i{
-  /* width: 25px;
-  height: 25px; */
   padding: 4px;
   border: 1px solid black;
-  /* border-radius: 50%; */
 }
 .circle-icon:hover i{
   border-color: blue;
