@@ -14,9 +14,7 @@ body{
 header{
   background-color: rgba(255, 255, 255, 0.7);
   width: calc(100% - 8px);
-  /* height: var(--header-height); */
   position: fixed;
-
 }
 #aside-main-layout{
   display: flex;
@@ -42,4 +40,8 @@ main{
 .blind{
   display: none;
 }
-
+.make-circle{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}

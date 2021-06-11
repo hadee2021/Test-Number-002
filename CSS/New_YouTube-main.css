@@ -4,19 +4,12 @@ main {
   justify-content: center;
   margin-top: 56px;
 }
-/* :root{
-  --flexbox-rowcount: width / min-width;
-  --flexbox-colcount: height / min-height;
-} */
 main > div {
-  /* width: calc(100% / var(--flexbox-rowcount));
-  height: calc(100% / var(--flexbox-colcount)); */
   min-width: 280px;
   max-width: 350px;
   flex: 1;
   padding: 0 14px;
   margin-bottom: 35px;
-
   display: flex;
   flex-flow: column nowrap;
 }
@@ -32,19 +25,11 @@ span > img {
   height: 100%;
   display: flex;
 }
-.profile-discribe > div:first-child {
-  flex: 1;
-}
 .profile-discribe > div:first-child > img {
-  /* width: 90%;
-  height: 65%; */
   width: 50px;
   height: 50px;
   border-radius: 50%;
   padding: 5px;
-}
-.profile-discribe > div:last-child {
-  flex: 4;
 }
 .flex-tn {
   display: flex;
@@ -55,16 +40,14 @@ span > img {
 }
 .title {
   flex: 1;
-
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-
   cursor: pointer;
 }
-.tittle-z-index {
+.title-z-index {
   display: none;
   border: 1px solid black;
   background-color: white;
@@ -72,11 +55,14 @@ span > img {
   top: 0;
   right: -40px;
 }
-.title:hover .tittle-z-index {
+.title:hover .title-z-index {
   display: inline-block;
 }
 .name-data {
   flex: 1;
   font-size: small;
   color: lightslategray;
+}
+.name-data > p{
+  margin: 0;
 }

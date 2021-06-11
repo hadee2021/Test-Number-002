@@ -2,21 +2,20 @@
 ul{
   list-style: none;
   padding: 0;
-}
-ul > div{
+  margin: 0;
   border-bottom: 1px solid #888;
 }
-ul > div > div{
+ul > li{
   background-color: white;
   display: flex;
   justify-content: center;
   height: 45px;
 }
-ul > div > div:hover{
+ul > li:hover{
   background-color: lightgrey;
 }
 i,
-li{
+span{
   display: inline-block;
   align-self: center;
 }
@@ -27,7 +26,7 @@ i:hover{
   color: red;
 }
 
-li{
+li > span{
   width: 177px;
 }
 .circle-icon{
@@ -35,11 +34,11 @@ li{
   margin-right: 16px;
 }
 .circle-icon i{
-  width: 25px;
-  height: 25px;
+  /* width: 25px;
+  height: 25px; */
   padding: 4px;
   border: 1px solid black;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .circle-icon:hover i{
   border-color: blue;
