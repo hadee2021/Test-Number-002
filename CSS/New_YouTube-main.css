@@ -2,7 +2,8 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 56px;
+  padding-top: 64px;
+  overflow: auto;
 }
 main > div {
   min-width: 280px;
